@@ -1,19 +1,37 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://priyamakhija6.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "install": "^0.13.0",
+    "nodemailer": "^6.9.4",
+    "npm": "^9.8.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-chrono": "^2.2.2",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-parallax-tilt": "^1.7.155",
+    "react-pdf": "^7.3.0",
+    "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.11.0",
+    "react-vertical-timeline-component": "^3.6.0",
+    "typewriter-effect": "^2.20.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
